@@ -119,7 +119,7 @@ int main(void)
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  ethernetif_input_own(&gnetif);
+	  ethernetif_input(&gnetif);
 	  sys_check_timeouts();
 
 	  printf("Hello World \n\r");
