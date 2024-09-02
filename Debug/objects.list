@@ -5,6 +5,7 @@
 "./Core/Src/syscalls.o"
 "./Core/Src/sysmem.o"
 "./Core/Src/system_stm32h7xx.o"
+"./Core/Src/tcp_server.o"
 "./Core/Startup/startup_stm32h743bitx.o"
 "./Drivers/BSP/Components/dp83848/dp83848.o"
 "./Drivers/BSP/Components/lan8742/lan8742.o"

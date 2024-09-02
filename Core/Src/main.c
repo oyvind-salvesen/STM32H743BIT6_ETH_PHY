@@ -112,18 +112,20 @@ int main(void)
   MX_USART1_UART_Init();
   MX_LWIP_Init();
   /* USER CODE BEGIN 2 */
-
+  tcp_server_init();
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
-	  ethernetif_input(&gnetif);
-	  sys_check_timeouts();
-
-	  printf("Hello World \n\r");
-	  HAL_Delay(500);
+//	  ethernetif_input(&gnetif);
+//	  sys_check_timeouts();
+//
+//	  printf("Hello World \n\r");
+//	  HAL_Delay(500);
+	  MX_LWIP_Process();
+	  HAL_Delay(2);
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
